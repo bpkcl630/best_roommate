@@ -16,5 +16,8 @@
     <string name="activity_cards">名片夹</string>
     <string name="typeInAddr"> 输入地点名称</string>
     <string name="title_activity_card_infor">Card_infor</string>
+    <string name="title_activity_activity_vip">Activity_vip</string>
+    <string name="title_activity_activity_login">Activity_login</string>
+    <string name="title_activity_activity_tips">Activity_tips</string>
 
 </resources>

@@ -64,6 +64,18 @@
             android:name="com.example.roommate2.Card_infor"
             android:label="@string/title_activity_card_infor" >
         </activity>
+        <activity
+            android:name="com.example.roommate2.Activity_vip"
+            android:label="@string/title_activity_activity_vip" >
+        </activity>
+        <activity
+            android:name="com.example.roommate2.Activity_login"
+            android:label="@string/title_activity_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.roommate2.Activity_tips"
+            android:label="@string/title_activity_activity_tips" >
+        </activity>
     </application>
 
 </manifest>

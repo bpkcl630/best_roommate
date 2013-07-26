@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCDCDC" >
+
+    <!-- 返回及VIP导航 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="800dp"
+        android:layout_height="96dp"
+        android:background="#DCDCDC" >
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:src="@drawable/back_icon"
+            android:onClick="onclickback" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/vip_03" />
+
+    </RelativeLayout>
+    
+	<!--vip服务列表  -->
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EAEAEA" >
+        
+         <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="中介找房"
+        android:textSize="30sp"
+        android:background="#EAEAEA"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:orientation="vertical" 
+             android:background="#DCDCDC">
+         </LinearLayout>
+          
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="搬家服务"
+        android:textSize="30sp"
+        android:background="#EAEAEA"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp"/>
+     
+     	 <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:orientation="vertical" 
+             android:background="#DCDCDC">
+         </LinearLayout>
+
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="保险协议"
+        android:textSize="30sp"
+        android:background="#EAEAEA"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp"/>
+     
+     	 <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:orientation="vertical" 
+             android:background="#DCDCDC">
+         </LinearLayout>
+     
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="其他人工服务"
+        android:textSize="30sp"
+        android:background="#EAEAEA"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp"/>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

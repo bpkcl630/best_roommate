@@ -424,29 +424,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_query_06=0x7f03000a;
         public static final int activity_query_result=0x7f03000b;
         public static final int activity_search=0x7f03000c;
-        public static final int android_search=0x7f03000d;
-        public static final int button_bestmate=0x7f03000e;
-        public static final int content_frame=0x7f03000f;
-        public static final int latest_item01=0x7f030010;
-        public static final int listview=0x7f030011;
-        public static final int main_fragment=0x7f030012;
-        public static final int match_item01=0x7f030013;
-        public static final int menu_fragment=0x7f030014;
-        public static final int menu_frame=0x7f030015;
-        public static final int menulist=0x7f030016;
-        public static final int mytitlebar=0x7f030017;
-        public static final int personinfo_item=0x7f030018;
-        public static final int personinfo_item01=0x7f030019;
-        public static final int personinfo_item02=0x7f03001a;
-        public static final int personinfo_item03=0x7f03001b;
-        public static final int personinfo_item04=0x7f03001c;
-        public static final int personinfo_item05=0x7f03001d;
-        public static final int slidingmenumain=0x7f03001e;
-        public static final int tab_indicator=0x7f03001f;
+        public static final int activity_vip=0x7f03000d;
+        public static final int android_search=0x7f03000e;
+        public static final int button_bestmate=0x7f03000f;
+        public static final int content_frame=0x7f030010;
+        public static final int latest_item01=0x7f030011;
+        public static final int listview=0x7f030012;
+        public static final int main_fragment=0x7f030013;
+        public static final int match_item01=0x7f030014;
+        public static final int menu_fragment=0x7f030015;
+        public static final int menu_frame=0x7f030016;
+        public static final int menulist=0x7f030017;
+        public static final int mytitlebar=0x7f030018;
+        public static final int personinfo_item=0x7f030019;
+        public static final int personinfo_item01=0x7f03001a;
+        public static final int personinfo_item02=0x7f03001b;
+        public static final int personinfo_item03=0x7f03001c;
+        public static final int personinfo_item04=0x7f03001d;
+        public static final int personinfo_item05=0x7f03001e;
+        public static final int slidingmenumain=0x7f03001f;
+        public static final int tab_indicator=0x7f030020;
     }
     public static final class menu {
-        public static final int card_infor=0x7f080000;
-        public static final int main=0x7f080001;
+        public static final int activity_vip=0x7f080000;
+        public static final int card_infor=0x7f080001;
+        public static final int main=0x7f080002;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -462,6 +464,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int next=0x7f060005;
         public static final int tab1=0x7f060003;
         public static final int tab2=0x7f060004;
+        public static final int title_activity_activity_vip=0x7f06000f;
         public static final int title_activity_card_infor=0x7f06000e;
         public static final int typeInAddr=0x7f06000d;
     }
