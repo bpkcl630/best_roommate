@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="#343744"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <ImageView
+        android:id="@+id/imageView_menuhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menu_01" />
+
+    <ImageView
+        android:id="@+id/imageView_menu2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menu_02"
+        android:onClick="onclickar" />
+
+    <ImageView
+        android:id="@+id/imageView_menu3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menu_03" 
+        android:onClick="onclickcard"/>
+
+    <ImageView
+        android:id="@+id/imageView_menu4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menu_04" />
+
+    <ImageView
+        android:id="@+id/imageView_menu5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menu_05" />
+
+    <ImageView
+        android:id="@+id/imageView_menu6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menu_06" />
+
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent" >
+
+      <ImageView
+          android:id="@+id/imageView_menu8"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentLeft="true"
+          android:adjustViewBounds="true"
+          android:src="@drawable/menu_08" />
+
+</RelativeLayout>
+</LinearLayout>

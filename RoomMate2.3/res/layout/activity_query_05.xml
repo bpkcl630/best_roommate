@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView_52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/text_52" />
+
+    <ImageView
+        android:id="@+id/imageView_53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/text_53" />
+
+    <ImageView
+        android:id="@+id/imageView_55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/text_55" />
+
+    <ImageView
+        android:id="@+id/imageView_55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/text_55" />
+
+    <ImageView
+        android:id="@+id/imageView_56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/text_56" />
+
+    <ImageView
+        android:id="@+id/imageView_57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/text_57" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#DDDDDD" >
+
+        <ImageView
+            android:id="@+id/prequery_05"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickPre"
+            android:src="@drawable/text_above" />
+
+        <ImageView
+            android:id="@+id/nextquery_05"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/prequery_05"
+               android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/prequery_05"
+            android:onClick="onClickNext"
+            android:src="@drawable/text_next" />
+    </RelativeLayout>
+
+</LinearLayout>

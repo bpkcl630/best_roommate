@@ -1,0 +1,117 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- The main content view -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#dddddd"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/searchicon"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/moreicon"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:src="@drawable/searchicon" />
+
+            <ImageView
+                android:id="@+id/moreicon"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:src="@drawable/moreicon" />
+        </RelativeLayout>
+        
+        
+        <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/tab_selector"
+                     />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" > 
+
+                    <ListView
+                        android:id="@+id/latestPerson"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:fastScrollEnabled="true"
+                        android:focusableInTouchMode="true" >
+                    </ListView>
+
+                    <RelativeLayout
+                        android:id="@+id/matchlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+                
+                                  			 
+                    <ListView
+                       	android:id="@+id/matchPerson"
+                        	android:layout_width="match_parent"
+                        	android:layout_height="wrap_content"
+                        	android:drawSelectorOnTop="true"
+                        	android:fastScrollEnabled="true"
+                        	android:focusableInTouchMode="true" >
+                    	</ListView>
+
+                    	<ImageView
+                    	    android:id="@+id/bestmate"
+                    	    android:layout_width="wrap_content"
+                    	    android:layout_height="wrap_content"
+                    	    android:layout_alignParentBottom="true"
+                    	    android:adjustViewBounds="true"
+                    	    android:scaleType="fitEnd"
+                    	    android:src="@drawable/match_bestroommate_02" />
+
+   				 </RelativeLayout>
+                </FrameLayout>
+              </LinearLayout>
+        </TabHost>
+</LinearLayout>
+    
+<!-- The navigation drawer -->
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawSelectorOnTop="true"
+        android:background="#111" >
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>

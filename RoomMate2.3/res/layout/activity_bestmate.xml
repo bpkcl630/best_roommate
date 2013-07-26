@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background = "#DDDDDD"
+       >
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/back_icon" 
+            android:onClick="onclickgoback"/>
+      
+    </FrameLayout>
+        
+        <FrameLayout 
+    android:id="@+id/content_frame"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent" />  
+      
+    </LinearLayout>
