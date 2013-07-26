@@ -20,7 +20,7 @@ public class Activity_vip extends Activity {
 		return true;
 	}
 
-	public void onclickgoback(View v) {
+	public void onclickback(View v) {
 		this.finish();
 	}
 

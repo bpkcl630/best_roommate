@@ -14,15 +14,5 @@ public class menuFragment extends Fragment {
 		return inflater.inflate(R.layout.menu_fragment, null);
 	}
 	
-	public void onclickcard(View v){
-		Intent intent = new Intent( getActivity(),
-				Activity_Cards.class);
-		 getActivity().startActivity(intent);
-	}
-	public void onclickar(View v){
-		Intent intent = new Intent( getActivity(),
-				Activity_PersonInfo.class);
-		 getActivity().startActivity(intent);
-	}
 
 }

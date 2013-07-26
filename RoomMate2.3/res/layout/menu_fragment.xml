@@ -20,8 +20,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/menu_02"
-        android:onClick="onclickar" />
+        android:src="@drawable/menu_02" />
 
     <ImageView
         android:id="@+id/imageView_menu3"
@@ -36,14 +35,16 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/menu_04" />
+        android:src="@drawable/menu_04"
+        android:onClick="onclicktips" />
 
     <ImageView
         android:id="@+id/imageView_menu5"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/menu_05" />
+        android:src="@drawable/menu_05"
+        android:onClick="onclickvip" />
 
     <ImageView
         android:id="@+id/imageView_menu6"
@@ -63,7 +64,8 @@
           android:layout_alignParentBottom="true"
           android:layout_alignParentLeft="true"
           android:adjustViewBounds="true"
-          android:src="@drawable/menu_08" />
+          android:src="@drawable/menu_08" 
+          android:onClick="onclickexit"/>
 
 </RelativeLayout>
 </LinearLayout>

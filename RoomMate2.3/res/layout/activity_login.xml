@@ -1,160 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="800dp"
-    android:layout_height="1280dp"
-    android:background="#2E3647" >
-    
-     <!-- 顶部返回链接 -->
-     <RelativeLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E3647"
+    android:orientation="vertical" >
+
+    <!-- 顶部返回链接 -->
+
+    <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
         android:background="#2E3647" >
 
-         <ImageView
-             android:id="@+id/imageView6"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignParentLeft="true"
-             android:layout_centerVertical="true"
-             android:layout_marginLeft="30dp"
-             android:src="@drawable/back_icon" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/back_icon" />
+    </RelativeLayout>
 
-     </RelativeLayout>
-     
-     <!-- 个人头像部分 -->
+    <!-- 个人头像部分 -->
+
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_below="@+id/relativeLayout1"
-        android:background="#379FB2">
-         <ImageView
-             android:id="@+id/imageView1"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignParentLeft="true"
-             android:layout_centerVertical="true"
-             android:layout_marginLeft="158dp"
-             android:src="@drawable/logo_photo"
-              />        
+        android:layout_height="wrap_content"
+        android:layout_weight="200"
+        android:background="#379FB2" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_photo" />
     </RelativeLayout>
-    
+
     <!-- 社会化登录部分 -->
-    <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:id="@+id/relativeLayout3"
-            android:layout_below="@+id/relativeLayout2" >
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="52dp"
-                android:src="@drawable/qq_link" 
-                android:clickable="true"
-                />
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="30dp"
-                android:layout_toRightOf="@+id/imageView2"
-                android:src="@drawable/renren_link" />
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView3"
-                android:layout_marginLeft="28dp"
-                android:layout_toRightOf="@+id/imageView3"
-                android:src="@drawable/sina_link" />
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView4"
-                android:layout_marginLeft="30dp"
-                android:layout_toRightOf="@+id/imageView4"
-                android:src="@drawable/douban_link" />
-        </RelativeLayout>
-        
-     <!-- 邮箱和密码输入部分 -->
-     	<RelativeLayout     	    
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/relativeLayout4"
-            android:layout_below="@+id/relativeLayout3" >
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="355dp"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editText1"
-                android:layout_alignParentBottom="true"
-                android:ems="10"
-                android:hint="请输入您的密码"
-                android:inputType="textPassword" />
 
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="355dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="110dp"
-                android:ems="10"
-                android:hint="请输入您的注册邮箱"
-                android:inputType="textEmailAddress" />
+    <LinearLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:orientation="horizontal" >
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editText2"
-                android:layout_alignBottom="@+id/editText2"
-                android:layout_alignRight="@+id/editText2"
-                android:text="忘记密码？"
-                
-                android:textColor="#898A88"
-                
-                android:textAppearance="?android:attr/textAppearanceSmall" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:src="@drawable/qq_link" />
 
-        </RelativeLayout>
-        
-     	 <!-- 登录和注册按钮部分 -->
-     	<RelativeLayout     	    
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:id="@+id/relativeLayout5"
-            android:layout_below="@+id/relativeLayout4"
-            android:layout_marginTop="50dp" >
-        	<Button
-        	    android:id="@+id/btn_register"
-        	    android:layout_width="260dp"
-        	    android:layout_height="90dp"
-        	    android:layout_centerVertical="true"
-        	    android:layout_marginLeft="10dp"
-        	    android:layout_toRightOf="@+id/btn_login"
-        	    android:background="#379FB2"
-        	    android:textSize="15pt"
-        	    android:text="注  册"
-        	    android:textColor="#ffffff" />
-        	<Button
-        	    android:id="@+id/btn_login"
-        	    android:layout_width="260dp"
-        	    android:layout_height="90dp"
-        	    android:layout_alignBaseline="@+id/btn_register"
-        	    android:layout_alignBottom="@+id/btn_register"
-        	    android:layout_alignParentLeft="true"
-        	    android:layout_marginLeft="34dp"
-        	    android:background="#FE6663"
-        	    android:textSize="15pt"
-        	    android:text="登  录"
-        	    android:textColor="#ffffff" />
-        </RelativeLayout>
-       
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/renren_link" />
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/sina_link" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/douban_link" />
+    </LinearLayout>
+
+    <!-- 邮箱和密码输入部分 -->
+
+    <LinearLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="200"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#242b3a"
+            android:hint="请输入您的注册邮箱"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#242b3a"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="20sp" >
+        </EditText>
+    </LinearLayout>
+
+    <!-- 登录和注册按钮部分 -->
+
+    <LinearLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#FE6663"
+            android:padding="15dp"
+            android:text="登  录"
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            android:onClick="onclicklogin"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="#379FB2"
+            android:padding="15dp"
+            android:text="注  册"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

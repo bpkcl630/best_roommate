@@ -21,7 +21,7 @@ public class Activity_Cards extends Activity {
 		setContentView(R.layout.activity_cards);
 		GridView gv = (GridView) findViewById(R.id.card_gridView);
 		// 为GridView设置适配器
-		int[] imgs = { R.drawable.card_02, R.drawable.card_03,
+		int[] imgs = { R.drawable.card_02, R.drawable.card_06,
 				R.drawable.card_04, R.drawable.card_05, R.drawable.card_06,
 				R.drawable.card_07 };
 

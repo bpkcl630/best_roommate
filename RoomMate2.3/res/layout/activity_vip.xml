@@ -8,8 +8,8 @@
     <!-- 返回及VIP导航 -->
     <RelativeLayout
         android:id="@+id/relativeLayout1"
-        android:layout_width="800dp"
-        android:layout_height="96dp"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
         android:background="#DCDCDC" >
         <ImageView
             android:id="@+id/imageView1"
@@ -17,7 +17,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="44dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:src="@drawable/back_icon"
             android:onClick="onclickback" />
 
@@ -26,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_toRightOf="@+id/imageView1"
             android:src="@drawable/vip_03" />
 

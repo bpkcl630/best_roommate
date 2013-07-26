@@ -77,5 +77,25 @@ public class MainActivity extends FragmentActivity {
 		Intent intent = new Intent(this, Activity_PersonInfo.class);
 		this.startActivity(intent);
 	}
+	
+	public void onclickexit(View v) {
+		Intent home = new Intent(Intent.ACTION_MAIN);   
+	    home.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);   
+	    home.addCategory(Intent.CATEGORY_HOME);   
+	    startActivity(home);  
+	}
+	
+	
+	public void onclickvip(View v){
+		Intent intent = new Intent( this,
+				Activity_vip.class);
+		this.startActivity(intent);
+	}
+	
+	public void onclicktips(View v){
+		Intent intent = new Intent( this,
+				Activity_tips.class);
+		this.startActivity(intent);
+	}
 
 }
