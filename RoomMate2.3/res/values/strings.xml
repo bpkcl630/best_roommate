@@ -19,5 +19,7 @@
     <string name="title_activity_activity_vip">Activity_vip</string>
     <string name="title_activity_activity_login">Activity_login</string>
     <string name="title_activity_activity_tips">Activity_tips</string>
+    <string name="title_activity_activity_userinfo">Activity_userinfo</string>
+    <string name="title_activity_activity__user_info">Activity_UserInfo</string>
 
 </resources>

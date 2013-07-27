@@ -38,7 +38,7 @@ public class mainFragment extends Fragment {
 		Bestmatebutton.setOnClickListener(new MyButtonListener_Bestmate());
 
 		/** Tabhost----主页面 **/
-		TabHost mtabHost = (TabHost) getView().findViewById(R.id.tabhost);
+		mtabHost = (TabHost) getView().findViewById(R.id.tabhost);
 		mtabHost.setup();
 		/** 最新 **/
 		View tabview1 = createTabView(mtabHost.getContext(), "最新");

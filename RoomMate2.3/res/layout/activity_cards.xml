@@ -6,9 +6,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="46dp"
+        android:layout_height="38dp"
         android:layout_gravity="center"
-        android:background="@drawable/card_01" >
+        android:background="#dcdcdc" >
 
         <ImageView
             android:id="@+id/imageView_back"
@@ -17,8 +17,20 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="14dp"
+            android:layout_marginRight="0dp"
             android:onClick="onclickgoback"
             android:src="@drawable/back_icon" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView_back"
+            android:adjustViewBounds="true"
+            android:src="@drawable/card_icon" />
 
     </RelativeLayout>
 

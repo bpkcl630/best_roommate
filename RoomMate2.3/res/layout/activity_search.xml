@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#242b3a"
+    android:background="#2e3647"
     android:focusableInTouchMode="true"
     android:orientation="vertical" >
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:background="#242b3a" >
 
         <ImageView
             android:id="@+id/back_search"
@@ -26,8 +27,8 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/darkborder" >
+        android:background="@drawable/darkborder"
+        android:orientation="vertical" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,15 +45,13 @@
 
             <EditText
                 android:id="@+id/addr"
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="16dp"
-                android:background="@drawable/color_dark2"
-                android:ems="10"
-                android:inputType="textPostalAddress"
-                android:text="@string/typeInAddr"
-                android:textColor="#969696"
+                android:background="#242A3B"
+                android:hint="@string/typeInAddr"
+                android:textColor="#b6b6b6"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -65,7 +64,6 @@
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/search_fujin" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -80,7 +78,7 @@
             android:background="@drawable/darkborder"
             android:dividerPadding="30dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal" >
 
             <RadioButton
                 android:id="@+id/radio_01"
@@ -162,7 +160,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_weight="1" >
+        android:layout_weight="1"
+        android:background="#242b3a" >
 
         <ImageView
             android:id="@+id/personinfo_like"
@@ -193,7 +192,8 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1" >
+        android:layout_weight="1"
+        android:background="#242b3a" >
 
         <ImageView
             android:id="@+id/imageView_search"
