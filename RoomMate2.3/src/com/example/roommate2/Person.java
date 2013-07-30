@@ -55,6 +55,16 @@ public class Person {
 		this.houseStatus = HouseStatus.NO;
 		this.relationship = Relationship.SINGLE;
 	}
+
+	public int getGenderResId() {
+		switch (gender){
+		case FEMALE:
+			return R.drawable.icon72;
+		case MALE:
+			return R.drawable.iconwhere;
+		}
+		return 0;
+	}
 	
 
 }
