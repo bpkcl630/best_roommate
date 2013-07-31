@@ -315,6 +315,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int vip_content=0x7f0200b4;
     }
     public static final class id {
+        public static final int action_settings=0x7f04007c;
+        public static final int addr=0x7f04004e;
         public static final int addr_search=0x7f04005e;
         public static final int back_search=0x7f040022;
         public static final int bestmate=0x7f040009;
@@ -324,8 +326,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int card_gridView=0x7f04000c;
         public static final int content_frame=0x7f04000b;
         public static final int drawer_layout=0x7f04001a;
-        public static final int editText_loginEmail=0x7f040015;
-        public static final int editText_loginPassword=0x7f040016;
+        public static final int editText1=0x7f040015;
+        public static final int editText2=0x7f040016;
         public static final int fullscreen=0x7f040003;
         public static final int iV_latest_gender=0x7f040069;
         public static final int imageView1=0x7f040005;
