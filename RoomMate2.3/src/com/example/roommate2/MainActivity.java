@@ -14,23 +14,23 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		// ������������
+		// 设置标题
 		setTitle("Attach");
 
-		// ���������������������
+		// 初始化滑动菜单
 		initSlidingMenu();
 	}
 
 	/**
-	 * ���������������������
+	 * 初始化滑动菜单
 	 */
 	private void initSlidingMenu() {
-		// ���������������������
+		// 设置主界面视图
 		setContentView(R.layout.content_frame);
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.content_frame, new mainFragment()).commit();
 
-		// ������������������������������
+		// 设置滑动菜单的属性值
 		menu = new SlidingMenu(this);
 		menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 		menu.setShadowWidth(50);
@@ -38,7 +38,7 @@ public class MainActivity extends FragmentActivity {
 		menu.setBehindOffset(150);
 		menu.setFadeDegree(0.35f);
 		menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
-		// ���������������������������������
+		// 设置滑动菜单的视图界面
 		menu.setMenu(R.layout.menu_frame);
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.menu_frame, new menuFragment()).commit();
@@ -46,7 +46,7 @@ public class MainActivity extends FragmentActivity {
 
 	@Override
 	public void onBackPressed() {
-		// ���������������������������������
+		// 点击返回键关闭滑动菜单
 		if (menu.isMenuShowing()) {
 			menu.showContent();
 		} else {
@@ -84,7 +84,8 @@ public class MainActivity extends FragmentActivity {
 	    home.addCategory(Intent.CATEGORY_HOME);   
 	    startActivity(home);  
 	}
-		
+	
+	
 	public void onclickvip(View v){
 		Intent intent = new Intent( this,
 				Activity_vip.class);

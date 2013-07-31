@@ -326,8 +326,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int card_gridView=0x7f04000c;
         public static final int content_frame=0x7f04000b;
         public static final int drawer_layout=0x7f04001a;
-        public static final int editText_loginEmail=0x7f040015;
-        public static final int editText_loginPassword=0x7f040016;
+        public static final int editText1=0x7f040015;
+        public static final int editText2=0x7f040016;
         public static final int fullscreen=0x7f040003;
         public static final int iV_latest_gender=0x7f040069;
         public static final int imageView1=0x7f040005;
