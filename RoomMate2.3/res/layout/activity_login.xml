@@ -104,7 +104,7 @@
         android:orientation="vertical" >
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/editText_loginEmail"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -113,14 +113,15 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:background="#242b3a"
+            android:ems="10"
             android:hint="请输入您的注册邮箱"
             android:inputType="textEmailAddress"
             android:padding="10dp"
-            android:textSize="20sp"
-            android:textColor="#eee" />
+            android:textColor="#eee"
+            android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editText_loginPassword"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -129,12 +130,16 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:background="#242b3a"
+            android:ems="10"
             android:hint="请输入您的密码"
             android:inputType="textPassword"
             android:padding="10dp"
-            android:textSize="20sp"
-            android:textColor="#000" >
+            android:textColor="#000"
+            android:textSize="20sp" >
+
+            <requestFocus />
         </EditText>
+
     </LinearLayout>
 
     <!-- 登录和注册按钮部分 -->

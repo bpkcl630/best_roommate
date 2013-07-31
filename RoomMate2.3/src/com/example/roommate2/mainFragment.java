@@ -37,16 +37,16 @@ public class mainFragment extends Fragment {
 		Bestmatebutton = (ImageView) getView().findViewById(R.id.bestmate);
 		Bestmatebutton.setOnClickListener(new MyButtonListener_Bestmate());
 
-		/** Tabhost----Ö÷Ò³Ãæ **/
+		/** Tabhost----ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ **/
 		mtabHost = (TabHost) getView().findViewById(R.id.tabhost);
 		mtabHost.setup();
-		/** ×îĞÂ **/
-		View tabview1 = createTabView(mtabHost.getContext(), "×îĞÂ");
+		/** ï¿½ï¿½ï¿½ï¿½ **/
+		View tabview1 = createTabView(mtabHost.getContext(), "æœ€æ–°");
 		TabSpec setContent = mtabHost.newTabSpec("tag1").setIndicator(tabview1)
 				.setContent(R.id.latestPerson);
 		mtabHost.addTab(setContent);
-		/** ÍÆ¼ö **/
-		View tabview2 = createTabView(mtabHost.getContext(), "ÍÆ¼ö");
+		/** ï¿½ï¿½ï¿½ï¿½ **/
+		View tabview2 = createTabView(mtabHost.getContext(), "æ¨è");
 		setContent = mtabHost.newTabSpec("tag2").setIndicator(tabview2)
 				.setContent(R.id.matchlayout);
 		mtabHost.addTab(setContent);
@@ -85,14 +85,14 @@ public class mainFragment extends Fragment {
 
 		SimpleAdapter adapter1 = new SimpleAdapter(getActivity()
 				.getBaseContext(), aList1, R.layout.latest_item01, from1, to1);
-		/* layoutÀïÃæ²»ĞèÒªsrcÊôĞÔ */
+		/* layoutï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½srcï¿½ï¿½ï¿½ï¿½ */
 		SimpleAdapter adapter2 = new SimpleAdapter(getActivity()
 				.getBaseContext(), aList2, R.layout.latest_item01, from2, to1);
-		/* layoutÀïÃæ²»ĞèÒªsrcÊôĞÔ */
+		/* layoutï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½srcï¿½ï¿½ï¿½ï¿½ */
 		listView1.setAdapter(adapter1);
 		listView2.setAdapter(adapter2);
 
-		/** µã»÷item,½øÈëÏÂÒ»¸ö½çÃæ **/
+		/** ï¿½ï¿½ï¿½ï¿½item,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ **/
 		listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			public void onItemClick(AdapterView adapterView, View view,
 					int arg2, long arg3) {
