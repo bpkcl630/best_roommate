@@ -2,7 +2,7 @@ package com.example.roommate2;
 
 public enum HouseStatus {
 
-	YES("有房", true), NO("无房", false);
+	YES("鏈夋埧", true), NO("鏃犳埧", false);
 	private final String name;
 	private boolean value;
 
